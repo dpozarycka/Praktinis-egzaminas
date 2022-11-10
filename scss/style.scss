@@ -134,7 +134,7 @@ nav {
   .swiper {
     display: flex;
     height: 300px;
-    max-width: 600px;
+    max-width: 1000px;
 
     .swiper-wrapper {
       display: flex;
@@ -149,4 +149,15 @@ nav {
       }
     }
   }
+}
+
+.section8 {
+  height: 573px;
+  background: #E27866;
+}
+
+footer {
+  height: 123px;
+  background: black;
+  color: white;
 }

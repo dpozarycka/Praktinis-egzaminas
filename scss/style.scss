@@ -1,54 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: montserrat;
 }
 
 nav {
   display: flex;
+  padding: 0 150px;
   justify-content: space-between;
   align-items: center;
   background: black;
   position: fixed;
   width: 100%;
   height: 72px;
+  z-index: 999;
 
   a {
     text-decoration: none;
     color: white;
     margin: 0 5px;
   }
+
+  .links {
+    display: flex;
+    gap: 40px;
+  }
 }
 
 .section1 {
   display: flex;
-  align-items: center;
+  padding-left: 130px;
   height: 639px;
-  background: url(../images/background1.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63),  rgba(0, 0, 0, 0.63)), url(../images/background1.png);
+  background-size: cover;
+  background-position: 50% 50%;
   padding-top: 72px;
+
+  #logo-big {
+    width: 246.74px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  #divider-small {
+    padding-top: 10px;
+    margin-left: -10px;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: white;
+    width: 427px;
+  }
+
+  .section1-left {
+    p {
+      color: white;
+      font-size: 16px;
+      width: 651px;
+      padding-bottom: 40px;
+  }
+  
+    .button1 {
+      text-decoration: none;
+      background: none;
+      border: 2px solid white;
+      color: white;
+      padding: 8px;
+    }
+  }
+
+
+  .section1-right {
+
+    display: flex;
+    align-items: center;
+
+    .container {
+      margin-left: 130px;
+      width: 360px;
+      height: 400px;
+      background: white;
+      border-radius: 5px;
+
+      h1 {
+        height: 57px;
+        width: 360px;
+        background: #F5F5F5;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        line-height: 57px;
+        border-radius: 5px 5px 0 0;
+        
+        
+        .free {
+          color: #E27866;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 50px;
+        padding-top: 25px;
+      }
+
+      .input {
+        margin-left: 50px;
+        border: 0;
+        border-bottom: 1px solid #D8D8D8;
+        width: 260px;
+        padding-top: 20px;
+        color: #D8D8D8;
+        font-size: 12px;
+        padding-bottom: 3px;
+        padding-left: 7px;
+      }
+
+      .input_field {
+        display: flex;
+        height: 80px;
+        gap: 5px;
+        margin-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 70px;
+        font-size: 9px;
+        font-weight: bold;
+        align-items: center;
+        
+      input[type="radio"]{
+        appearance: none;
+
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        border: 2px solid #41D395;
+        position: relative;
+        cursor: pointer;
+
+      }
+
+      input[type="radio"]::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #41D395;
+        border-radius: 6px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: scale(0);
+        transition: 0.3s;
+      }
+
+      input[type="radio"]:checked:before {
+        transform: scale(1);
+      }
+
+      }
+
+      .submit {
+        background: #41D395;
+        border-radius: 0 0 5px 5px;
+      }
+
+      button {
+        border: none;
+        background: none;
+        color: white;
+        font-size: 18px;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 .section2 {
   display: flex;
   height: 105px;
   width: 100%;
+  justify-content: space-between;
 
   .fa-solid {
     color: #E27866;
-    width: 30px;
-    height: 30px;
     rotate: 45deg;
+  }
+
+  .fa-brands {
+    color: #E27866;
+  }
+
+  h3, p {
+    margin-left: 151px;
+  }
+
+  .section2-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section2-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+    margin-right: 151px;
+  }
+
+  .fa-solid, .fa-brands:hover{
+    cursor: pointer;
   }
 }
 
 .section3 {
   display: flex;
-  background: url(../images/desert-mountains.jpg);
+  background-image: linear-gradient(0deg, rgba(226, 120, 102, 0.416),  rgba(226, 120, 102, 0.416)), url(../images/desert-mountains.jpg);
+  background-size: cover;
+  background-position: 50% 20%;
   height: 595px;
   width: 100%;
 
   .section3-left {
     width: 59%;
+    display: flex;
+
+    .blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      margin-left: 130px;
+    }
+
+    .register, .apply, .receive {
+      display: flex;
+      height: 100px;
+      width: 100px;
+      background: #a37169c5;
+      color: white;
+      text-decoration: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .rotatetext {
+        transform: rotate(-45deg);
+      }
+    }
   }
 
   .section3-right {

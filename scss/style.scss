@@ -226,7 +226,7 @@ nav {
 
 .section3 {
   display: flex;
-  background-image: linear-gradient(0deg, rgba(226, 120, 102, 0.416),  rgba(226, 120, 102, 0.416)), url(../images/desert-mountains.jpg);
+  background-image: linear-gradient(0deg, rgba(194, 75, 54, 0.416),  rgba(194, 75, 54, 0.416)), url(../images/desert-mountains.jpg);
   background-size: cover;
   background-position: 50% 20%;
   height: 595px;
@@ -235,6 +235,28 @@ nav {
   .section3-left {
     width: 59%;
     display: flex;
+    align-items: center;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      padding: 0 70px;
+
+
+      h1 {
+        font-size: 36px;
+        padding-bottom: 15px;
+      }
+
+      p {
+        font-size: 14px;
+        text-align: justify;
+      }
+
+
+    }
 
     .blocks {
       display: flex;
@@ -248,12 +270,13 @@ nav {
       display: flex;
       height: 100px;
       width: 100px;
-      background: #a37169c5;
+      background: #8d5249c5;
       color: white;
       text-decoration: none;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      font-size: 14px;
 
       .rotatetext {
         transform: rotate(-45deg);
@@ -263,25 +286,39 @@ nav {
 
   .section3-right {
     display: flex;
+    gap: 20px;
     width: 41%;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0;
 
     .cabbagephoto {
       flex-wrap: nowrap;
-      width: 168px;
-      height: 168px;
+      background: url(../images/cabbage.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 170px;
+      height: 170px;
     }
 
     .greensphoto {
       flex-wrap: nowrap;
-      width: 168px;
-      height: 168px;
+      background: url(../images/greens.png);
+      background-position: center;
+      background-size: cover;
+      width: 170px;
+      height: 170px;
     }
 
     .stepsphoto {
       flex-wrap: wrap;
-      width: 362.24px;
-      height: 177.44px;
+      background: url(../images/steps.png);
+      background-position: center;
+      background-size: cover;
+      width: 360px;
+      height: 177px;
+      margin: 0;
     }
   }
 
@@ -290,17 +327,116 @@ nav {
 
 .section4 {
   background: black;
+  height: 596px;
   display: flex;
   color: white;
+  display: flex;
+  align-items: center;
+  padding: 50px 210px;
+
+  .section4-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 388px;
+      height: 170px;
+    }
+  }
+
+  .section4-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+
+    h1 {
+      font-size: 30px;
+      padding-right: 270px;
+    }
+
+    .divider-big {
+      width: 200px;
+      padding: 30px 0;
+    }
+
+    .mainp {
+      font-size: 14px;
+      padding-right: 135px;
+      padding-bottom: 30px;
+    }
+
+    .title1 {
+      display: flex;
+      padding-right: 100px;
+      justify-content: center;
+      align-items: center;
+
+      .fa {
+        display: flex;
+        padding: 20px;
+      }
+
+      .title1-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+
+        h4 {
+          display: flex;
+          font-weight: bold;
+          padding-bottom: 5px;
+        }
+
+        .titlep {
+          padding-right: 20px;
+        }
+      }
+    }
+
+    .title2 {
+      display: flex;
+      padding-right: 100px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+
+      .fa {
+        display: flex;
+        padding: 20px;
+      }
+
+      .title2-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+
+        h4 {
+          display: flex;
+          font-weight: bold;
+          padding-bottom: 5px;
+        }
+
+        .title2p {
+          padding-right: 20px;
+        }
+      }
+    }
+
+
+
+  }
 }
 
 .fa {
   display: flex;
   justify-content: center;
   background: #E27866;
-  height: 30px;
-  width: 30px;
-  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
 
   .fa-regular, .fa-solid {
     display: flex;

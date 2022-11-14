@@ -222,53 +222,63 @@
     <!-- Slides -->
   <div class="swiper-slide">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
-    <div>
+    <div class="phototext">
       <img src="app/images/man.jpg" alt="">
+      <div class="who">
       <h4>Jeremy H.</h4>
       <h6>Manager</h6>
     </div>
   </div>
+  </div>
   <div class="swiper-slide">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
-    <div>
+    <div class="phototext">
       <img src="app/images/man2.jpg" alt="">
+      <div class="who">
       <h4>John S.</h4>
       <h6>Freelancer</h6>
+    </div>
     </div>
   </div>
   <div class="swiper-slide">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
-    <div>
+    <div class="phototext">
       <img src="app/images/woman.jpg" alt="">
+      <div class="who">
       <h4>Susan W.</h4>
       <h6>Photographer</h6>
+    </div>
     </div>
   </div>
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </section>
 
   <section class="section8">
-    <h1>CONTACT US</h1>
+    <h1 class="contactus">CONTACT US</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
     <form action="/action_page.php">
       <div class="container">
-        <input type="text" placeholder="First name" name="firstname" id="firstname" required>
+        <input class="input" type="text" placeholder="First name" name="firstname" id="firstname" required>
     
-        <input type="text" placeholder="Last Name" name="lastname" id="lastname" required>
+        <input class="input" type="text" placeholder="Last Name" name="lastname" id="lastname" required>
     
-        <input type="number" placeholder="Phone number" name="phonenumber" id="phonenumber" required>
+        <input class="input" type="number" placeholder="Phone number" name="phonenumber" id="phonenumber" required>
 
         <div class="input_field radio_option">
-          <input type="radio" name="radiogroup1" id="rd1">
-          <label for="rd1">Personal</label>
+          <input type="radio" name="radiogroup1" id="rd1" checked>
+          <label for="rd1">PERSONAL</label>
           <input type="radio" name="radiogroup1" id="rd2">
-          <label for="rd2">Company</label>
-          </div>
-    
-        <button type="submit" class="registerbtn">SEND</button>
+          <label for="rd2">COMPANY</label>
+        </div>
+        <h1 class="submit"><button>SEND</button></h1>
       </div>
     </form>
   </section>

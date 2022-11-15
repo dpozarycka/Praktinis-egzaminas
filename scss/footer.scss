@@ -14,6 +14,14 @@ footer {
     .fa-brands, .fa-solid {
       color: #E27866;
     }
+
+    .fa-brands:hover {
+      cursor: pointer;
+    }
+
+    .fa-solid:hover {
+      cursor: pointer;
+    }
   
     .footer-left {
       display: flex;

@@ -708,16 +708,7 @@
     background-color: $orange !important;
   }
   
-  @media (min-width: 1000px){
-    .swiper {
-      max-width: 1000px;
-    }
-  
-    .swiper-button-prev,
-    .swiper-button-next {
-      display: none;
-    }
-  }
+
         .phototext {
           display: flex;
   

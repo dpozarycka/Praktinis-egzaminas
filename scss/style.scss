@@ -194,11 +194,13 @@ nav {
 
   .fa-solid {
     color: #E27866;
+    opacity: 65%;
     rotate: 45deg;
   }
 
   .fa-brands {
     color: #E27866;
+    opacity: 65%;
   }
 
   h3, p {
@@ -479,8 +481,10 @@ nav {
 
     .awesome {
       display: flex;
+      width: 500px;
       flex-direction: column;
       align-items: center;
+    
 
       h4 {
         padding: 30px 0;
@@ -824,13 +828,112 @@ nav {
       display: flex;
       flex-direction: column;
     }
+
+    .input {
+      width: 260px;
+      margin-bottom: 30px;
+      margin-left: 65px;
+      height: 20px;
+      padding-left: 7px;
+      padding-bottom: 3px;
+      border: none;
+      border-bottom: 1px solid #333333;
+      font-size: 12px;
     }
+
+    .input:first-of-type {
+      margin-top: 40px;
+    }
+
+    .input_field {
+      display: flex;
+      padding-left: 65px;
+      gap: 10px;
+      font-size: 9px;
+
+      .personal, .company {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+
+      input[type="radio"] {
+        appearance: none;
+
+        width: 13px;
+        height: 13px;
+        border-radius: 13px;
+        border: 1px solid #41D395;
+        position: relative;
+        cursor: pointer;
+      }
+
+      input[type="radio"]::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        background: #41D395;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: scale(0);
+        transition: 0.3;
+      }
+
+      input[type="radio"]:checked:before {
+        transform: scale(1);
+      }
+
+    }
+
+    .submit {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      
+      button {
+        background: #41D395;
+        border: none;
+        color: white;
+        height: 48px;
+        width: 158px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+    }
+  }
   
-
-
 
 footer {
   height: 123px;
   background: black;
-  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+
+  .fa-solid {
+    rotate: 45deg;
+  }
+
+  .fa-brands, .fa-solid {
+    color: #E27866;
+  }
+
+  .footer-left {
+    display: flex;
+    gap: 100px;
+  }
+
+  .footer-right {
+    color: white;
+    opacity: 50%;
+    font-size: 18px;
+  }  
 }

@@ -204,7 +204,7 @@
     background-image: linear-gradient(0deg, rgba(194, 75, 54, 0.416),  rgba(194, 75, 54, 0.416)), url(../images/desert-mountains.jpg);
     background-size: cover;
     background-position: 50% 20%;
-    height: 595px;
+    @include height;
     width: 100%;
   
     .section3-left {
@@ -302,7 +302,7 @@
   
   .section4 {
     background: black;
-    height: 596px;
+    @include height;
     display: flex;
     color: white;
     display: flex;
@@ -422,7 +422,7 @@
   }
   
   .section5 {
-    height: 592px;
+    @include height;
     display: flex;
     flex-wrap: wrap;
   
@@ -655,7 +655,7 @@
   .section7 {
     display: flex;
     flex-direction: column;
-    height: 591px;
+    @include height;
     align-items: center;
   
     h1 {

@@ -287,6 +287,8 @@
       }
   
       .stepsphoto {
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         background: url(../images/steps.png);
         background-position: center;
